@@ -10,6 +10,10 @@ module.exports = {
      },
       colors: {
         'white': '#ffffff',
+      },
+      spacing: {
+        '110': '30rem',
+        '140': '37rem',
       }
     },
   },
