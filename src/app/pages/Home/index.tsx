@@ -1,11 +1,13 @@
 import React from "react";
 
 import { Input } from "@/app/components/Input";
-import { Button } from "@/app/components/Button";
+import { useAppSelector } from "@/hooks/hooks";
 
 import { ContentInformation } from "@/app/components/ContentInformation";
 
 export const Home = () => {
+  const { city } = useAppSelector(rootReducer => rootReducer.cityReducer)
+
   return (
     <main className="container w-screen h-screen mx-auto flex items-center justify-center flex-col z-10">
       <header className="flex text-center flex-col">
@@ -15,12 +17,13 @@ export const Home = () => {
         </h1>
       </header>
 
-      <div className="flex flex-row">
+      <div>
         <Input />
-        <Button />
       </div>
       
-      <ContentInformation />
+      {city &&
+        <ContentInformation />
+      }
     </main>
   );
 };

@@ -1,11 +1,11 @@
 import { Reducer } from "redux";
 import { cityState, cityTypes } from "./types";
 
-const initialState = {
+const initialState: cityState = {
   city: "",
 };
 
-export const cityReducer: Reducer<cityState> = (state = initialState, action) => {
+const cityReducer: Reducer<cityState> = (state = initialState, action) => {
   switch (action.type) {
     case cityTypes.ADD_CITY:
       return { ...state, city: action.payload };
@@ -15,4 +15,4 @@ export const cityReducer: Reducer<cityState> = (state = initialState, action) =>
   }
 };
 
-
+export default cityReducer
