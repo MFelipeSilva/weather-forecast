@@ -5,9 +5,15 @@ export const weatherTypes = {
 };
 
 export interface weatherDB {
-
+  name: string;
+  main: any;
+  weather: any[];
+  humidity: number;
+  wind: any;
 };
 
-export interface weatherState {
-
+export interface WeatherState {
+  readonly data: weatherDB[];
+  readonly loading: boolean;
+  readonly error: boolean;
 };

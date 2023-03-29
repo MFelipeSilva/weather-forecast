@@ -12,5 +12,5 @@
 
 body {
   @apply bg-blue-600;
-  @apply bg-gradient-to-r from-cyan-400 to-blue-600
+  @apply bg-gradient-to-r from-cyan-400 to-blue-600;
 }
