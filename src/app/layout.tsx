@@ -1,5 +1,5 @@
 import "../styles/global.css";
-import favicon from "@/assets/favicon.svg"
+import favicon from "@/assets/favicon.svg";
 
 export const metadata = {
   title: "Weather Forecast",
