@@ -3,7 +3,7 @@ import { weatherTypes, weatherDB } from "./types";
 export const loadRequest = () => ({
   type: weatherTypes.LOAD_REQUEST,
 });
-export const storeWeather = (payload: weatherDB | undefined) => ({
+export const storeWeather = (payload: weatherDB | undefined ) => ({
   type: weatherTypes.STORE_WEATHER,
   payload,
 });

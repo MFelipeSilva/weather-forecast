@@ -19,7 +19,8 @@ module.exports = {
         '3xl': 'rgba(0, 0, 0, 0.09) 0px 10px 10px',
       },
       animation: {
-        slide: 'slide .7s forwards',
+        slide: 'slide .7s ease forwards',
+        button: 'button .6s ease'
       },
       keyframes: {
         slide: {

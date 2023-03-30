@@ -1,10 +1,10 @@
 import api from "../config";
 import { createKey } from "./keys";
-import { CityProps, Props } from "./types";
+import { CityProps } from "./types";
 
 import { useQuery } from "react-query";
 
 
 export const useWeatherAPI = (city: string) => {
-  return useQuery(createKey(city), () => api.get<CityProps>(`weather?q=${city}&units=metric&appid=ad803b063baf3041a3ccdf9465e86115&lang=pt_br`).then((response) => response.data))
+  return useQuery(createKey(city), () => api.get<CityProps>(`weather?q=${city}&units=metric&appid=${process.env.NEXT_PUBLIC_API_KEY}&lang=pt_br`).then((response) => response.data))
 };
