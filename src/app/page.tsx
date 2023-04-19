@@ -1,25 +1,19 @@
 "use client";
-
 import React from "react";
-import { Home } from "./pages/Home";
+import { Poppins } from "@next/font/google";
 
-import { QueryClientProvider } from "react-query";
-import queryClient from "@/services/settings/configQuery";
+import { HelcomePage } from "./helcome";
 
-import { store } from "@/redux/store";
-import { Provider } from "react-redux";
-import { Background } from "./components/Background";
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
+});
 
 export default function App() {
-  
   return (
-    <QueryClientProvider client={queryClient}>
-      <Provider store={store}>
-        <main className="">
-          <Background />
-          <Home />
-        </main>
-      </Provider>
-    </QueryClientProvider>
+    <main className={`${poppins.className}`}>
+      <HelcomePage />
+    </main>
   );
 }

@@ -1,5 +1,5 @@
-import nuvens from "@/assets/nuvens.svg";
-import nuvem from "@/assets/nuvemesol.svg";
+import nuvens from "../../../assets/nuvens.svg";
+import nuvem from "../../../assets/nuvemesol.svg";
 
 import { useAppSelector } from "@/hooks/hooks";
 
@@ -15,7 +15,7 @@ export const Background = () => {
       />
 
       <img
-        className="absolute object-cover bottom-0 right-0 opacity-40 mb-10 mr-7 w-140 max-sm:w-48 max-md:w-64 max-lg:w-80 max-xl:w-2/5 max-2xl:w-2/6 -z-10"
+        className="absolute object-cover bottom-0 right-0 opacity-40 mb-10 mr-7 w-115 max-sm:w-48 max-md:w-64 max-lg:w-80 max-xl:w-2/5 max-2xl:w-2/6 -z-10"
         src={nuvens.src}
         alt="nuvem"
       />

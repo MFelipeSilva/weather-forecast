@@ -12,6 +12,7 @@ export interface weatherDB {
   wind?: any;
 };
 
+
 export interface WeatherState {
   readonly data: weatherDB[];
   readonly loading: boolean;

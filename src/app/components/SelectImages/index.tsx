@@ -9,25 +9,25 @@ export const selectImage = (data: any) => {
   switch (data?.weather[0]?.description) {
     case "céu limpo":
       return sol.src;
-      break;
+
     case "chuva moderada":
       return chuva.src;
-      break;
+
     case "chuva leve":
       return chuva.src;
-      break;
+
     case "neve":
       return neve.src;
-      break;
+
     case "nublado":
       return neve.src;
-      break;
+
     case "confusão":
       return vento.src;
-      break;
+
     case "nuvens dispersas":
       return nublado.src;
-      break;
+
     default:
       return nublado.src;
   }

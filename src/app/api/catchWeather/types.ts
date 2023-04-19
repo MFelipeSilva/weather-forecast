@@ -8,7 +8,7 @@ export interface Props {
 export interface CityProps {
   name: string;
   main: any;
-  weather: any[];
+  weather: any[number];
   humidity: number;
   wind: any;
 };

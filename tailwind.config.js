@@ -6,14 +6,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'poppins': ['Poppins'],
+        'poppins': ['var(--font-poppins)']
      },
       colors: {
         'white': '#ffffff',
       },
       spacing: {
         '110': '30rem',
-        '140': '37rem',
+        '115': '34rem',
       },
       boxShadow: {
         '3xl': 'rgba(0, 0, 0, 0.09) 0px 10px 10px',
