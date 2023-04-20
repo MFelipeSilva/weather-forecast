@@ -22,7 +22,7 @@ export const HelcomePage = () => {
           <button
             className="bg-white font-medium text-base text-cyan-500 h-20 w-48 rounded-md transition-all duration-300 ease-in-out hover:bg-transparent hover:border-2 hover:text-white"
           >
-            LET'S SEARCH
+            LET&apos;S SEARCH
           </button>
         </Link>
       </div>
