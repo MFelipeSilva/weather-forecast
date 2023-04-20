@@ -32,11 +32,11 @@ export const LayoutHome = () =>{
       <Background />
       
       <main className="container w-screen h-screen mx-auto flex items-center justify-center flex-col">
-        <header className="flex text-center flex-col">
+        <header className="flex text-center flex-col max-md:mb-10">
           <h1 className="font-bold text-4xl text-white max-md:text-3xl">
             Previsão do Tempo
           </h1>
-          <h1 className="font-regular text-xl text-white mt-5 mb-20 underline underline-offset-8 max-md: m-6 max-md:text-lg">
+          <h1 className="font-regular text-xl text-white mt-5 mb-20 underline underline-offset-8 max-md:m-6 max-lg:text-lg max-md:text-base max-sm:text-sm">
             Mantenha-se informado sobre o clima da sua região ou em qualquer
             parte do mundo.
           </h1>
