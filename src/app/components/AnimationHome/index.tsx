@@ -1,22 +1,16 @@
-import React, { useRef, useState } from "react";
-import Lottie from "react-lottie";
+import React, { useState } from "react";
+import Lottie from "lottie-react";
 
-import IconHome from "../../../assets/icon-home-white.json";
 import Link from "next/link";
+import IconHome from "../../../assets/icon-home-white.json";
 
 
 export const AnimatedHomeIcon = () => {
-  const defaultOptions = {
-    loop: false,
-    autoplay: false,
-    animationData: IconHome,
-  };
+  const [handleLoop, setHandleLoop] = useState<number>(0);
 
   return (
-    <div className="absolute top-3 left-3.5 z-10">
       <Link href="/">
-        <Lottie options={defaultOptions} width={35} height={35} />{" "}
+        <Lottie animationData={IconHome} onMouseOver={() =>setHandleLoop(0.5)} onMouseOut={() => setHandleLoop(0)} loop={handleLoop} autoPlay={false} className="absolute top-3 left-3.5 z-10 w-9" />
       </Link>
-    </div>
   );
 };
