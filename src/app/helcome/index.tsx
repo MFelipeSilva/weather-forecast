@@ -13,7 +13,7 @@ export const HelcomePage = () => {
         <img
           className="relative top-20 flex w-72  h-72"
           src={icon.src}
-          alt=""
+          alt="nuvem-icon"
         />
       </main>
 
