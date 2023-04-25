@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import icon from "../../assets/favicon.svg";
 import Link from "next/link";
 
+import { AnimatedSearchIcon } from "../components/AnimationSearch";
+
 export const HelcomePage = () => {
+  const [handleLoop, setHandleLoop] = useState<number>(0);
+
   return (
     <div className="container w-screen h-screen flex mx-auto items-center justify-center flex-col">
       <main className="flex items-center mb-24 justify-center flex-col">
@@ -18,11 +22,11 @@ export const HelcomePage = () => {
       </main>
 
       <div className="flex items-center justify-center">
-        <Link href="/home">
-          <button className="bg-white font-medium text-base text-cyan-500 h-20 w-48 rounded-md transition-all duration-300 ease-in-out max-lg:w-40 max-md:h-16 max-md:w-32 max-lg:text-sm max-md:text-xs hover:bg-transparent hover:border-2 hover:text-white">
-            LET&apos;S SEARCH
-          </button>
-        </Link>
+        <button onMouseOver={() => setHandleLoop(0.5)} className="bg-white flex flex-row items-center justify-center gap-2 font-medium text-base text-cyan-500 h-20 w-48 rounded-md transition-all duration-300 ease-in-out max-lg:w-40 max-md:h-16 max-md:w-32 max-lg:text-sm max-md:text-xs hover:bg-transparent hover:border-2 hover:text-white">
+          <Link href="/home">LET&apos;S SEARCH</Link>
+          
+          <AnimatedSearchIcon handleLoop={handleLoop} setHandleLoop={setHandleLoop} />
+        </button>
       </div>
     </div>
   );
