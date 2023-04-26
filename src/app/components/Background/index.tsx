@@ -22,7 +22,7 @@ export const Background = () => {
       />
 
       <div className="absolute flex items-center justify-center mt-5 mr-5 right-0 top-0">
-        <div className="relative opacity-10 rounded-full bg-black w-16 h-16"></div>
+        <div className="relative opacity-10 rounded-xl bg-black w-16 h-16"></div>
         <AnimatedHomeIcon />
       </div>
     </div>

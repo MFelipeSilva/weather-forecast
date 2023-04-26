@@ -22,11 +22,18 @@ export const HelcomePage = () => {
       </main>
 
       <div className="flex items-center justify-center">
-        <button onMouseOver={() => setHandleLoop(0.5)} className="bg-white flex flex-row items-center justify-center gap-2 font-medium text-base text-cyan-500 h-20 w-48 rounded-md transition-all duration-300 ease-in-out max-lg:w-40 max-md:h-16 max-md:w-32 max-lg:text-sm max-md:text-xs hover:bg-transparent hover:border-2 hover:text-white">
-          <Link href="/home">LET&apos;S SEARCH</Link>
-          
-          <AnimatedSearchIcon handleLoop={handleLoop} setHandleLoop={setHandleLoop} />
-        </button>
+        <Link href="/home">
+          <button
+            onMouseOver={() => setHandleLoop(0.5)}
+            className="bg-white flex flex-row items-center justify-center gap-2 font-medium text-base text-cyan-500 h-20 w-48 rounded-md transition-all duration-300 ease-in-out max-lg:w-40 max-md:h-16 max-md:w-32 max-lg:text-sm max-md:text-xs hover:bg-transparent hover:border-2 hover:text-white">
+            LET&apos;S SEARCH
+
+            <AnimatedSearchIcon
+              handleLoop={handleLoop}
+              setHandleLoop={setHandleLoop}
+            />
+          </button>
+        </Link>
       </div>
     </div>
   );
